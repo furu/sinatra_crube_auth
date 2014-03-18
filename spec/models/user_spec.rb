@@ -30,9 +30,12 @@ describe User do
 
   it { should be_valid }
 
+  # ユーザが作成されたときに記憶トークンを発行する
+  # その記憶トークンが空でないことを確認するテスト
   describe 'remember token' do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
+    after { User.destroy_all }
   end
 
   context 'when name is not present' do
