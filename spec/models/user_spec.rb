@@ -67,6 +67,10 @@ describe User do
     end
 
     it { should_not be_valid }
+
+    after do
+      User.destroy_all
+    end
   end
 
 end
