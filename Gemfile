@@ -6,7 +6,7 @@ gem 'sinatra-activerecord'
 gem 'slim'
 gem 'rake'
 gem 'thin'
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 
 group :development do
   gem 'sqlite3'
