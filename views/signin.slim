@@ -1,5 +1,8 @@
 h1 Sign in
 
+- if flash[:error]
+  p = flash[:error]
+
 form accept-charset="UTF-8" action="/sessions" method="post"
   div
     label for="session_email" Email: 

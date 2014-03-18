@@ -34,7 +34,8 @@ post '/sessions' do
     sign_in user
     redirect '/'
   else
-    slim :signin
+    flash[:error] = 'Invalid email/password combination'
+    redirect back
   end
 end
 
