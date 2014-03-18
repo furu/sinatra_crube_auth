@@ -13,6 +13,7 @@ group :development do
 
   gem 'pry'
   gem 'pry-byebug'
+  gem 'racksh'
 end
 
 group :test do
