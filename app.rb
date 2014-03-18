@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'slim'
+require 'rack-flash'
 
 require_relative 'models/user'
 
@@ -15,6 +16,7 @@ configure do
   enable :sessions
 end
 
+use Rack::Flash
 
 get '/' do
   slim :index

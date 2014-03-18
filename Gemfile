@@ -7,6 +7,7 @@ gem 'slim'
 gem 'rake'
 gem 'thin'
 gem 'bcrypt'
+gem 'rack-flash3'
 
 group :development do
   gem 'sqlite3'
