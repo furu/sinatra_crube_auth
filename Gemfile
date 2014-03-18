@@ -18,6 +18,7 @@ end
 
 group :test do
   gem 'rspec'
+  gem 'nyan-cat-formatter'
   gem 'rack-test'
   gem 'database_cleaner'
 end
